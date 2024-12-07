@@ -6,6 +6,7 @@
     android:padding="50dp">
 
     <LinearLayout
+        android:id="@+id/contenido"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -21,7 +22,7 @@
             android:id="@+id/campoUsuarioRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Usuario"
+            android:hint="Correo electrónico"
             android:textAlignment="center"
             android:textSize="20dp"
             android:textStyle="bold"
