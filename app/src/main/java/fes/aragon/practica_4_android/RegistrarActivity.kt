@@ -56,7 +56,9 @@ class RegistrarActivity : AppCompatActivity() {
 
         val verificacion = {
 
-            this.botonConfirmar.isEnabled = this.campoUsuario.text.isNotEmpty() && this.campoPassword.text.isNotEmpty() && (this.campoPassword.text.toString() == this.campoRepetirPassword.text.toString())
+            this.botonConfirmar.isEnabled = this.campoUsuario.text.isNotEmpty() &&
+                    this.campoPassword.text.isNotEmpty() &&
+                    (this.campoPassword.text.toString() == this.campoRepetirPassword.text.toString())
 
         }
 
@@ -94,7 +96,10 @@ class RegistrarActivity : AppCompatActivity() {
 
                 Log.i("Registro", "incorrecto")
 
-                val snackbar = crearSnackBar(findViewById(R.id.contenido), "Error al intentar crear el usuario", Snackbar.LENGTH_LONG, ContextCompat.getColor(this, android.R.color.holo_red_dark), ContextCompat.getColor(this, android.R.color.white), null)
+                val snackbar = crearSnackBar(findViewById(R.id.contenido),
+                    "Error al intentar crear el usuario",
+                    Snackbar.LENGTH_LONG, ContextCompat.getColor(this, android.R.color.holo_red_dark),
+                    ContextCompat.getColor(this, android.R.color.white), null)
 
                 snackbar.show()
 

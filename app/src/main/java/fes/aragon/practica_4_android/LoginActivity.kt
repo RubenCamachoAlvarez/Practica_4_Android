@@ -99,7 +99,10 @@ class LoginActivity : AppCompatActivity() {
 
                 Log.i("INICION SESION", "incorrecto")
 
-                val snackbar = crearSnackBar(findViewById(R.id.contenido), "Error al intentar iniciar sesion", Snackbar.LENGTH_LONG, ContextCompat.getColor(this, android.R.color.holo_red_dark), ContextCompat.getColor(this, android.R.color.white), null)
+                val snackbar = crearSnackBar(findViewById(R.id.contenidoInicioSesion),
+                    "Error al intentar iniciar sesion", Snackbar.LENGTH_LONG,
+                    ContextCompat.getColor(this, android.R.color.holo_red_dark),
+                    ContextCompat.getColor(this, android.R.color.white), null)
 
                 snackbar.show()
 

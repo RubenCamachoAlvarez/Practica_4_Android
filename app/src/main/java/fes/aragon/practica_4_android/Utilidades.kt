@@ -1,11 +1,9 @@
 package fes.aragon.practica_4_android
-
 import android.graphics.Typeface
 import android.view.Gravity
 import com.google.android.material.snackbar.Snackbar
 import android.view.View
 import android.widget.TextView
-
 fun crearSnackBar(root : View, texto : String, duracion : Int, colorSnackbar : Int, colorTexto : Int, accion : Unit?) : Snackbar {
 
     val snackbar = Snackbar.make(root, texto, duracion)
